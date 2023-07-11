@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                Festa de aniversário do Isac Pessoa Lima começa em 10d 12h 20m 15s
+                Festa de aniversário do Isac Pessoa Lima começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
                         <b>Local</b>
-                        Rua JavaScript, Tokyo - Japan
+                        Rua JavaScript, Tokyo - Japão
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Valor</b>
@@ -37,8 +38,8 @@
         </div>
     </header>
 
-    <section class="event">
-        <div class="container">
+    <section class="event event--local">
+        <div class="container" data-aos="zoom-in-up">
             <div class="event__details">
                 <h2 class="event__details__title">Local</h2>
                 <p class="event__details__description">
@@ -48,6 +49,30 @@
             <img class="event__image" src="images/local.jpg" alt="local da festa">
         </div>
     </section>
+    <section class="event event--comida event--image-left">
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Comida</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem optio voluptatum dolorem asperiores, facere eius consequuntur, dolore dolorum tenetur, rerum dignissimos? Id, expedita! Id pariatur enim sapiente earum culpa!
+                </p>
+            </div>
+            <img class="event__image" src="images/comida.webp" alt="local da festa">
+        </div>
+    </section>
+    <section class="event event--bolo">
+        <div class="container" data-aos="zoom-in-up">
+            <div class="event__details">
+                <h2 class="event__details__title">Bolo</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem optio voluptatum dolorem asperiores, facere eius consequuntur, dolore dolorum tenetur, rerum dignissimos? Id, expedita! Id pariatur enim sapiente earum culpa!
+                </p>
+            </div>
+            <img class="event__image" src="images/bolo.jpg" alt="local da festa">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
